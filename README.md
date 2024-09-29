@@ -63,7 +63,7 @@ Inspired by DeVinci, the **ICP-SMS AI project** was developed to make AI accessi
    npm run vite
    ```
 
-### Contributing to DeVinci and ICP-SMS AI
+### Contributing to DeVinci and Kaduda-AI
 
 1. **Fork the Repository**: Clone and fork the DeVinci repository from GitHub.
 2. **Feature Requests**: Developers can suggest new features through the GitHub issue tracker.
