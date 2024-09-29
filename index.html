@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>DeVinci App</title>
+  <meta name='author' content='Patrick Friedrich'>
+  <meta name='description' content='Users can have their truly personal AI assistant on this web app. The AI model runs on the user`s device (via the browser) and does not rely on any centrally hosted services.'>
+  <meta name='robots' content='index, follow'>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <script src="//mozilla.github.io/pdf.js/build/pdf.mjs" type="module"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./service-worker.js', { scope: '/' })
+          .then((registration) => {
+            console.log('Service Worker registered with scope:', registration);
+          })
+          .catch((error) => {
+            console.error('Service Worker registration failed:', error);
+          });
+      });
+    };
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/DeVinci_frontend/main.ts"></script>
+</body>
+
+</html>
