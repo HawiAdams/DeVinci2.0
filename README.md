@@ -1,8 +1,10 @@
 # DeVinci - AI and ICP blockchain Innovation
 
-## Developer's Guide to DeVinci and the ICP-SMS AI Project
+## Developer's Guide to DeVinci and the [Kaduda-AI](https://kaduda-ai.vercel.app/)
 
-DeVinci is an open-source, decentralized AI that runs in the browser and is powered by the Internet Computer Protocol (ICP) blockchain. Here’s a detailed guide for developers looking to contribute to this cutting-edge AI platform and its new **ICP-SMS AI Project**—an innovation inspired by DeVinci.
+
+DeVinci is an open-source, decentralized AI that runs in the browser and is powered by the Internet Computer Protocol (ICP) blockchain. Here’s a detailed guide for developers looking to contribute to this cutting-edge AI platform and its new **Kaduda-AI**—an innovation inspired by DeVinci.
+![image](https://github.com/user-attachments/assets/a304011d-468d-41fc-bc24-c15a04b1ea24)
 
 ### Architecture Overview
 
@@ -10,6 +12,7 @@ DeVinci is an open-source, decentralized AI that runs in the browser and is powe
 The frontend is built using **HTML, CSS, and JavaScript**. It integrates with the Web LLM (Language Learning Model) library to load AI models directly into the user’s browser. This setup ensures that AI interactions remain local, enhancing both **security** and **privacy**. The browser-based AI runs on WebGPU, allowing high-performance computations without relying on external servers.
 
 Developers can modify the frontend by working on the JavaScript files within the canister. Updates to the UI can be tested locally using Vite for hot reloading.
+![image](https://github.com/user-attachments/assets/9f6fa861-b8ee-40fc-a511-8e2a08579374)
 
 **2. Backend Canister:**
 The backend stores chat logs and user settings, if users opt in. Built on the ICP blockchain, the backend is highly scalable and decentralized. The canister's controllers are responsible for deploying updates and managing stored data. All data interactions are encrypted and secured with SHA-224.
